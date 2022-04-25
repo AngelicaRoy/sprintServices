@@ -8,5 +8,5 @@ describe("Tests for UserService", () => {
         expect(user.name).toBe("angelicaroy")
         expect(user.id).toBe(1)
         expect(user.bio).not.toBeUndefined()
-    })
+    });
 })
