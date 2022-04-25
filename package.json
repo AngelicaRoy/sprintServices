@@ -1,0 +1,22 @@
+{
+  "name": "sprint_2_services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelicaRoy/sprintServices.git"
+  },
+  "author": "AngelicaRoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelicaRoy/sprintServices/issues"
+  },
+  "homepage": "https://github.com/AngelicaRoy/sprintServices#readme"
+}
