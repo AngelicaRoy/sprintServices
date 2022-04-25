@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AngelicaRoy/sprintServices/issues"
   },
-  "homepage": "https://github.com/AngelicaRoy/sprintServices#readme"
+  "homepage": "https://github.com/AngelicaRoy/sprintServices#readme",
+  "devDependencies": {
+    "jest": "^28.0.0"
+  }
 }
