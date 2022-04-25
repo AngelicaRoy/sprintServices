@@ -1,4 +1,4 @@
-const User=require('./../models/user')
+const User=require('app/services/UserService')
 
 class UserService{
     static created(id, username, name){
