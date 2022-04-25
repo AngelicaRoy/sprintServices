@@ -1,14 +1,14 @@
-const UserService=require('./../../app/services/UserService')
+const UserService=require('./../app/services/UserService')
 
 describe("Tests for UserService", () => {
-    
-    test("1. Create a new user using the UserService", ()=>{
+    test("1. Create a new user using the UserService", () => {
+
         const user=UserService.create(1,"angelicaroy", "Angelica")
         expect(user.username).toBe(1,"AngelicaRoy")
         expect(user.name).toBe("angelicaroy")
         expect(user.id).toBe(1)
         expect(user.bio).not.toBeUndefined()
-    })
+    });
 
     test("2. Get all user data in list", () =>{
         const user=UserService.create(1, "angelicaroy", "Angelica")
@@ -17,13 +17,13 @@ describe("Tests for UserService", () => {
         expect(userInfoInList[1]).toBe("angelicaroy")
         expect(userInfoInList[2]).toBe("Angelica")
         expect(userInfoInList[3]).toBe("Sin bio")
-    })  
+    });  
 
     test("3. Update username", () => {
         const user=UserService.create(1, "angelicaroy", "Angelica")
         UserService.updateUserUsername(user, "angelog")
         expect(user.username).toBe("angelog")
-    })
+    });
 
     test("4. Given a list of users give me the list of usernames", () => {
         const user1 =UserService.create(1, "angelicaroy1", "Angelica")
@@ -33,5 +33,5 @@ describe("Tests for UserService", () => {
         expect(usernames).toContain("angelicaroy1")
         expect(usernames).toContain("angelicaroy2")
         expect(usernames).toContain("angelicaroy3")
-    })
-})
+    });
+})    
