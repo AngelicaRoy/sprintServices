@@ -6,11 +6,13 @@ class UserService{
     }
     
     static getInfo(user){
-        return [user.id, user.username, user.name, user="Sin vio"];
+        return [user.id, user.username, user.name, user="Sin bio"];
     }
 
-    
+    static updateUserUsername(user, newUser){
+        return user.username=newUser;
+    }
     
 }
 
-module.exports=UserService
+module.exports=UserService;
