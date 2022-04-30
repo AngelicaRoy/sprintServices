@@ -13,6 +13,12 @@ class UserService{
         return user.username=newUser;
     }
     
+    static getAllUsernames(users){
+        const names=[];
+        users.forEach(present => names.push(present.getUsername));
+        console.log(names);
+        return names;
+    }
 }
 
 module.exports=UserService;
