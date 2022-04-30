@@ -6,9 +6,10 @@ describe("Tests for UserService", () => {
         const user=UserService.create(1,"angelicaroy", "Angelica")
         expect(user.username).toBe("angelicaroy")
         expect(user.name).toBe("Angelica")
+        expect(user.id).toBe(1)
         expect(user.bio).not.toBeUndefined()
     });
-
+    /*
     test("2. Get all user data in list", () =>{
         const user=UserService.create(1, "angelicaroy", "Angelica")
         const userInfoInList=UserService.getInfo(user)
@@ -32,5 +33,5 @@ describe("Tests for UserService", () => {
         expect(usernames).toContain("angelicaroy1")
         expect(usernames).toContain("angelicaroy2")
         expect(usernames).toContain("angelicaroy3")
-    });
+    });*/
 })    
